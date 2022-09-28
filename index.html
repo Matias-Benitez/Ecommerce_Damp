@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- tittle -->
+    <title>Damp</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<header id="header" class="header"> <!------------------------- Header ----------------------->
+    <div class="container">
+    <div class="row">
+        <div class="four columns">
+            <img src="img/logo.png" id="logo">
+        </div>
+        <div class="two columns u-pull-right">
+            <ul>
+                <li class="submenu">
+                    <img src="img/cart.png" id="img-carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                        </div>
+                </li>
+            </ul>
+        </div>
+        </div> 
+    </div>
+    </header> <!------------------------- End Header ----------------------->
+    <div id="hero"> <!------------------------- Hero ----------------------->
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="contenido-hero">
+                                <h1>Busca tu Damp</h1>
+                                <p>Oferta lanzamiento todas al precio de $1300</p>
+                                <form action="#" id="busqueda" method="post" class="formulario">
+                                    <input class="u-full-width" type="text" placeholder="¿Que modelo estás buscando?" id="buscador">
+                                    <input type="submit" id="submit-buscador" class="submit-buscador">
+                                </form>
+                        </div>
+                    </div>
+            </div> 
+        </div>
+    </div> <!------------------------- End Hero ----------------------->
+    <div class="barra"> <!------------------------- Barra ----------------------->
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icono">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-truck-delivery" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="7" cy="17" r="2" />
+                            <circle cx="17" cy="17" r="2" />
+                            <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
+                            <line x1="3" y1="9" x2="7" y2="9" />
+                          </svg>
+                        <p>Comprás y tenés tu <br>
+                        Damp dentro de las 48hs</p>
+                    </div>
+                    <div class="four columns icono">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-discount" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <line x1="9" y1="15" x2="15" y2="9" />
+                            <circle cx="9.5" cy="9.5" r=".5" fill="currentColor" />
+                            <circle cx="14.5" cy="14.5" r=".5" fill="currentColor" />
+                            <circle cx="12" cy="12" r="9" />
+                          </svg>
+                        <p>Descuentos exclusivos <br>
+                        por el lanzamiento de la marca</p>
+                    </div>
+                    <div class="four columns icono">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shield-lock" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
+                            <circle cx="12" cy="11" r="1" />
+                            <line x1="12" y1="12" x2="12" y2="14.5" />
+                          </svg>
+                        <p>Contás con una garantía de <br>
+                        3 días por fallas de fábrica</p>
+                    </div>
+            </div>
+        </div>
+    </div> <!------------------------- End Barra ----------------------->
+    <div id="lista-remeras" class="container"> <!------------------------- Productos ----------------------->
+        <h2 id="encabezado" class="encabezado">Ofertas lanzamiento!!</h2>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/tshirt-1.png" class="imagen-remera u-full-width">
+                    <div class="info-card">
+                        <h4>Motorcycle </h4>
+                        <p>Disponible</p>
+                        <p class="precio">$1600  <span class="u-pull-right ">$1300</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/tshirt-2.png" class="imagen-remera u-full-width">
+                        <div class="info-card">
+                            <h4>Pulp Fiction</h4>
+                            <p>Disponible</p>
+                            <p class="precio">$1600  <span class="u-pull-right ">$1300</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/tshirt-3.png" class="imagen-remera u-full-width">
+                        <div class="info-card">
+                            <h4>Kratos</h4>
+                            <p>Disponible</p>
+                            <p class="precio">$1600  <span class="u-pull-right ">$1300</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/tshirt-4.png" class="imagen-remera u-full-width">
+                    <div class="info-card">
+                        <h4>Lion</h4>
+                        <p>Disponible</p>
+                        <p class="precio">$1600  <span class="u-pull-right ">$1300</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/tshirt-5.png" class="imagen-remera u-full-width">
+                        <div class="info-card">
+                            <h4>Monkey</h4>
+                            <p>Disponible</p>
+                            <p class="precio">$1600  <span class="u-pull-right ">$1300</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/tshirt-6.png" class="imagen-remera u-full-width">
+                        <div class="info-card">
+                            <h4>Shark</h4>
+                            <p>Disponible</p>
+                            <p class="precio">$1600  <span class="u-pull-right ">$1300</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/tshirt-7.png" class="imagen-remera u-full-width">
+                    <div class="info-card">
+                        <h4>Tiger</h4>
+                        <p>Disponible</p>
+                        <p class="precio">$1600  <span class="u-pull-right ">$1300</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/tshirt-8.png" class="imagen-remera u-full-width">
+                        <div class="info-card">
+                            <h4>Wolf</h4>
+                            <p>Disponible</p>
+                            <p class="precio">$1600  <span class="u-pull-right ">$1300</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/tshirt-9.png" class="imagen-remera u-full-width">
+                        <div class="info-card">
+                            <h4>Space Cat</h4>
+                            <p>Disponible</p>
+                            <p class="precio">$1600  <span class="u-pull-right ">$1300</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="img/tshirt-10.png" class="imagen-remera u-full-width">
+                        <div class="info-card">
+                            <h4>Samurai Dinosaur</h4>
+                            <p>Disponible</p>
+                            <p class="precio">$1600  <span class="u-pull-right ">$1300</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/tshirt-11.png" class="imagen-remera u-full-width">
+                            <div class="info-card">
+                                <h4>Tiger blinders</h4>
+                                <p>Disponible</p>
+                                <p class="precio">$1600  <span class="u-pull-right ">$1300</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/tshirt-12.png" class="imagen-remera u-full-width">
+                            <div class="info-card">
+                                <h4>Big bear</h4>
+                                <p>Disponible</p>
+                                <p class="precio">$1600  <span class="u-pull-right ">$1300</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+            </div> <!--.row-->
+    </div>  <!------------------------- End Productos ----------------------->
+    <footer id="footer" class="footer"> <!------------------------- Footer ----------------------->
+        <div class="container">
+            <p>Damp - All rights reserved 2022</p>
+        </div>
+    </footer> <!------------------------- End Footer ----------------------->
+    <script src="js/app.js"></script>
+</body>
+</html>
